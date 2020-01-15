@@ -1,0 +1,28 @@
+{
+    "name": "rrweb-logger",
+    "version": "1.0.0",
+    "main": "lib/index.js",
+    "license": "MIT",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint -c .eslintrc.js --ext .ts,.tsx ./src/",
+        "prepare": "npm run build"
+    },
+    "devDependencies": {
+        "@types/es6-promise": "^3.3.0",
+        "@types/node": "^13.1.6",
+        "@typescript-eslint/eslint-plugin": "^2.16.0",
+        "@typescript-eslint/parser": "^2.16.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier": "^1.19.1",
+        "typescript": "^3.7.4"
+    },
+    "dependencies": {
+        "rrweb": "https://github.com/maximax123/rrweb.git"
+    }
+}
